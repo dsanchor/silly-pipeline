@@ -1,0 +1,11 @@
+kind: BuildConfig
+apiVersion: v1
+metadata:
+  name: silly-pipeline
+spec:
+  source:
+    git:
+      uri: https://github.com/dsanchor/silly-pipeline
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile
